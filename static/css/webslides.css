@@ -3789,3 +3789,24 @@ Slides Index
 
 .text-slide-number {
   color: #abc; }
+
+/* CUSTOM CSS */
+*.timed_animation {
+  opacity: 0;
+  transition: all 0s ease !important;
+  animation: unset;
+}
+
+*.timed_animation.show {
+  animation: timed_animation .6s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes timed_animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}

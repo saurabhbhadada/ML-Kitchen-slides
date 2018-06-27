@@ -1,0 +1,61 @@
+CHART
+JSON
+XML
+HTML
+<html>
+<head>
+<title>My first chart using FusionCharts Suite XT</title>
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+<script type="text/javascript">
+    FusionCharts.ready(function(){
+    var fusioncharts = new FusionCharts({
+    type: 'pyramid',
+    renderAt: 'chart-container',
+    id: 'wealth-pyramid-chart',
+    width: '500',
+    height: '400',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "theme": "fint",
+            "caption": "The Global Wealth Pyramid",
+            "captionOnTop": "0",
+            "captionPadding": "25",
+            "alignCaptionWithCanvas": "1",
+            "subcaption": "Credit Suisse 2013",
+            "subCaptionFontSize": "12",
+            "borderAlpha": "20",
+            "is2D": "1",
+            "bgColor": "#ffffff",
+            "showValues": "1",
+            "numberPrefix": "$",
+            "numberSuffix": "M",
+            "plotTooltext": "$label of world population is worth USD $value tn ",
+            "showPercentValues": "1",
+            "chartLeftMargin": "40"
+        },
+        "data": [{
+            "label": "Successful Product",
+            "value": ""
+        }, {
+            "label": "Self-Perpetuating",
+            "value": ""
+        }, {
+            "label": "Retaining Users",
+            "value": ""
+        }, {
+            "label": "Growing Engaged Users",
+            "value": ""
+        }]
+    }
+}
+);
+    fusioncharts.render();
+    });
+</script>
+</head>
+<body>
+    <div id="chart-container">FusionCharts XT will load here!</div>
+</body>
+</html>
