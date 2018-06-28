@@ -443,10 +443,9 @@
           let times = []
           timed_components.forEach((el, i) => {
             let t
-            if (timed_components[i + 1]) t = parseInt(timed_components[i + 1].dataset.time) || 2000
-            else t = 2000
-            times.push(total_t)
+            t = parseInt(el.dataset.time) || 2000
             total_t += t
+            times.push(total_t)
           })
           console.log(times)
           timed_components.forEach((com, i) => {
