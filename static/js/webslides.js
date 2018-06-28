@@ -6,6 +6,7 @@
  * URL: https://github.com/webslides/webslides#readme
  * Credits: @jlantunez, @LuisSacristan, @Belelros
  */
+ var timeouts = [];
 /******/ (function (modules) { // webpackBootstrap
 /******/ 	// The module cache
   /******/ 	var installedModules = {}
@@ -422,6 +423,9 @@
           this.el.querySelectorAll('.timed_animation').forEach(el => {
             el.classList.remove('show')
           })
+          timeouts.forEach(t => {
+            clearTimeout(t)
+          })
         }
 
     /**
@@ -446,7 +450,7 @@
           })
           console.log(times)
           timed_components.forEach((com, i) => {
-            setTimeout(() => {
+            timeouts[i] = setTimeout(() => {
               com.classList.add('show')
             }, times[i])
           })

@@ -3809,6 +3809,11 @@ Slides Index
     }
 }
 
+.key_image {
+  height: auto;
+  width: 70%;
+}
+
 /* Progress circle */
 *,
 *:before,
