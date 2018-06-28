@@ -863,8 +863,8 @@ h1 {
   line-height: 5.6rem; }
   @media (min-width: 768px) {
     h1 {
-      font-size: 5.6rem;
-      line-height: 7.2rem; } }
+      font-size: 6.4rem;
+      line-height: 8rem; } }
 
 h1 span {
   font-style: italic; }
@@ -874,8 +874,8 @@ h2 {
   line-height: 4.8rem; }
   @media (min-width: 768px) {
     h2 {
-      font-size: 4.8rem;
-      line-height: 6.4rem; } }
+      font-size: 5.6rem;
+      line-height: 7.2rem; } }
 
 h3 {
   font-size: 2.4rem;
@@ -1727,7 +1727,7 @@ div + ol {
 .flexblock li h3,
 footer .column h2,
 footer .column h3 {
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 3.2rem;
   margin-bottom: 0; }
@@ -1736,7 +1736,10 @@ footer .column h3 {
 .flexblock.blink li li {
   padding: 0;
   width: 100%; }
-
+.flexblock li {
+  font-size: 2.4rem;
+  line-height: 5rem;
+}
 [class*='content-'] .flexblock li p {
   font-size: 1.8rem;
   line-height: 3.2rem; }
@@ -3812,6 +3815,10 @@ Slides Index
 .key_image {
   height: auto;
   width: 70%;
+}
+
+p.text-symbols {
+  margin-bottom: 0;
 }
 
 /* Progress circle */
