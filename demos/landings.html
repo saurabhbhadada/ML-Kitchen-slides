@@ -157,9 +157,9 @@
               </div>
               <div class="column">
                 <h1>
-                  Why did I publish again? 
+                  Why did I publish again?
                 </h1>
-                
+
               </div>
             </div>
             <!-- end .grid-->
@@ -181,10 +181,11 @@
 
         <section>
           <h1>Cohorts </h1>
-            <script type='text/javascript' src='https://tableau.ckpd.co/javascripts/api/viz_v1.js'></script>
-            <div class='tableauPlaceholder' style='width: 1920px; height: 893px;'>
-              <object class='tableauViz' width='1920' height='893' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Ftableau.ckpd.co%2F' /> <param name='embed_code_version' value='3' /> 
+          <script type='text/javascript' src='https://tableau.ckpd.co/javascripts/api/viz_v1.js'></script>
+          <div class="" style="height: 100vh">
+            <div class='tableauPlaceholder'>
+              <object class='tableauViz' width='100%' height='90%' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Ftableau.ckpd.co%2F' /> <param name='embed_code_version' value='3' />
                 <param name='site_root' value='&#47;t&#47;Global' /><param name='name' value='FirstDayPublishedAuthorRetention&#47;Retention' />
                 <param name='tabs' value='yes' />
                 <param name='toolbar' value='yes' />
@@ -192,16 +193,30 @@
                 <param name='filter' value='iframeSizedToWindow=true' />
               </object>
             </div>
+          </div>
           <!-- .end .wrap -->
         </section>
 
-
-
-
         <section>
+          <header>
+            <div class="wrap">
+              <div class="alignright">
+                <div class="set-size charts-container">
+                  <p>Random forest classifier Accuracy</p>
+                  <div class="pie-wrapper progress-72">
+                    <span class="label">72<span class="smaller">%</span></span>
+                    <div class="pie">
+                      <div class="left-side half-circle"></div>
+                      <div class="right-side half-circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
           <div class="wrap">
             <!-- [class*="content-"] = container max-width:50% = 600px -->
-            <div class="content-center">
+            <div class="content-center" style="width: 70%; max-width: 70%;">
               <h2>Features</h2>
               <ul class="flexblock specs">
                 <li>
@@ -261,26 +276,51 @@
         </section>
 
 
+        <section>
+          <div class="wrap aligncenter">
+            <h2>
+              Time discounting signals received
+            </h2>
+          </div>
+          <div class="grid vertical-align">
+            <div class="column">
+              <figure>
+                <img src="../static/images/temporal_discounting.jpg">
+              </figure>
+            </div>
+            <!-- end column-->
+            <div class="column">
+              <h3 style="font-size: 24px">
+                $$discount factor = \gamma = e^{-rt}$$ where `r` is discount rate and `t` is time in days $$time\_discounted\_signals\_received = \sum\gamma * S_t$$ where `S_t` is signal received on day `t`
+              </h3>
+            </div>
+            <!-- end .column-->
+          </div>
+          <!-- end .grid-->
+        </section>
 
-
-
-
-
-
-        <!-- Add slide here for temporal discounting --> 
-
-
-
-
-
-
-
-
+        <!-- Add slide here for temporal discounting -->
 
         <section>
+          <header>
+            <div class="wrap">
+              <div class="alignright">
+                <div class="set-size charts-container">
+                  <p>Random forest classifier Accuracy</p>
+                  <div class="pie-wrapper progress-81">
+                    <span class="label">81<span class="smaller">%</span></span>
+                    <div class="pie">
+                      <div class="left-side half-circle"></div>
+                      <div class="right-side half-circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
           <div class="wrap">
             <!-- [class*="content-"] = container max-width:50% = 600px -->
-            <div class="content-center">
+            <div class="content-center" style="width: 70%; max-width: 70%;">
               <h2>Features</h2>
               <ul class="flexblock specs">
                 <li>
@@ -313,10 +353,76 @@
         </section>
 
 
+        <section>
+          <div class="wrap aligncenter">
+            <h2>Accidental Discovery</h2>
+            <p>The boost in retention percentage for cooksnaps_sent and recipe_view_sent is more significant than either of those received signals.</p>
+            <img src="../static/images/discovery.png" style="height: 70vh; width: auto;">
+          </div>
+        </section>
 
+        <section>
+          <header>
+            <div class="wrap">
+              <div class="alignright">
+                <div class="set-size charts-container">
+                  <p>Random forest classifier Accuracy</p>
+                  <div class="pie-wrapper progress-85">
+                    <span class="label">85<span class="smaller">%</span></span>
+                    <div class="pie">
+                      <div class="left-side half-circle"></div>
+                      <div class="right-side half-circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="wrap">
+            <!-- [class*="content-"] = container max-width:50% = 600px -->
+            <div class="content-center" style="width: 70%; max-width: 70%;">
+              <h2>Features</h2>
+              <ul class="flexblock specs">
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-long-arrow-right">
+                        <use xlink:href="#fa-long-arrow-right"></use>
+                      </svg>
+                      Signals Received by Author
+                    </h2>
+                    Signals= likes, bookmarks, follows, cooksnaps, views, comments.
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-long-arrow-right">
+                        <use xlink:href="#fa-long-arrow-right"></use>
+                      </svg>
+                      Time discounted Signals Received by Author
+                    </h2>
+                    Signal received later is give less value.
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-long-arrow-right">
+                        <use xlink:href="#fa-long-arrow-right"></use>
+                      </svg>
+                      Signals sent by Author
+                    </h2>
+                    Signal sent by author after first publish.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- end .content-center -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
 
-
-        
         <!-- Kylie Jenner Slides -->
 
        <section>
@@ -325,13 +431,13 @@
               <figure>
                 <img src="../static/images/kylie_jenner.jpg" alt="Kylie Jenner">
                 <figcaption>
-                    Kylie Jenner 
+                    Kylie Jenner
                 </figcaption>
               </figure>
               <!-- end figure-->
               <div class="flex-content">
                 <h2>
-                  Kylie Jenner Tweet 
+                  Kylie Jenner Tweet
                 </h2>
                 <p><img src="../static/images/kylie_tweet.png" alt="Kylie Jenner"></p>
                 <a href=""> <h3> Snapchat stock loses $1.3 billion after Kylie Jenner tweet</h3> </a>
@@ -352,37 +458,109 @@
         </section>
 
         <section>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="grid vertical-align">
-              <div class="column">
-                <h3><strong>WebSlides is really easy</strong></h3>
-
-                <p class="text-intro">Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide. </p>
-                <p>Code looks neat, pure. It uses <strong>intuitive markup</strong> with popular naming conventions. There's no need to overuse classes or nesting. Based on <a href="https://github.com/jennschiffer/SimpleSlides">SimpleSlides</a>, by <a href="http://jennmoney.biz">Jenn Schiffer</a>. <strong>Tutorials</strong>: <a href="../demos/components.html" title="WebSlides Components">Components</a> &middot; <a href="../demos/classes.html" title="WebSlides Classes">Classes</a>.</p>
-              </div>
-              <!-- .end .column -->
-              <div class="column">
-                <pre>&lt;article id="webslides"&gt;
-  <span class="code-comment">&lt;!-- Slide 1 --&gt;</span>
-  &lt;section&gt;
-    &lt;h1&gt;Design for trust&lt;/h1&gt;
-  &lt;/section&gt;
-  <span class="code-comment">&lt;!-- Slide 2 --&gt;</span>
-  &lt;section class="bg-primary"&gt;
-    &lt;div class="wrap"&gt;
-      &lt;h2&gt;.wrap = container (width: 90%)&lt;/h2&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/article&gt;
-</pre>
-              </div>
-              <!-- .end .column -->
+          <div class="wrap aligncenter">
+            <h2>
+              Influence weighted signals
+            </h2>
+          </div>
+          <div class="grid vertical-align">
+            <div class="column">
+              <figure>
+                <img src="../static/images/follow_directed_graph.png">
+              </figure>
             </div>
-            <!-- .end .grid -->
+            <!-- end column-->
+            <div class="column">
+              <p style="font-size: 24px">
+                Each node will be given score based on the number of followers and their activity level
+                $$I_x = \sum a_i$$
+                where `a_i` is activity level of nodes with directed edge to `x`.
+              </p>
+              <p style="font-size: 24px">
+                $$Influence\ weighted\ signals = \sum S_x * I_x$$
+                where `S_x` is signal sent by user `x`
+              </p>
+            </div>
+            <!-- end .column-->
+          </div>
+          <!-- end .grid-->
+        </section>
+
+
+        <section>
+          <header>
+            <div class="wrap">
+              <div class="alignright">
+                <div class="set-size charts-container">
+                  <p>Random forest classifier Accuracy</p>
+                  <div class="pie-wrapper progress-87">
+                    <span class="label">87<span class="smaller">%</span></span>
+                    <div class="pie">
+                      <div class="left-side half-circle"></div>
+                      <div class="right-side half-circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="wrap">
+            <!-- [class*="content-"] = container max-width:50% = 600px -->
+            <div class="content-center" style="width: 70%; max-width: 70%;">
+              <h2>Features</h2>
+              <ul class="flexblock specs">
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-long-arrow-right">
+                        <use xlink:href="#fa-long-arrow-right"></use>
+                      </svg>
+                      Signals Received by Author
+                    </h2>
+                    Signals = likes, bookmarks, follows, cooksnaps, views, comments.
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-long-arrow-right">
+                        <use xlink:href="#fa-long-arrow-right"></use>
+                      </svg>
+                      Time discounted Signals Received by Author
+                    </h2>
+                    Signal received later is give less value.
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-long-arrow-right">
+                        <use xlink:href="#fa-long-arrow-right"></use>
+                      </svg>
+                      Signals sent by Author
+                    </h2>
+                    Signal sent by author after first publish.
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-long-arrow-right">
+                        <use xlink:href="#fa-long-arrow-right"></use>
+                      </svg>
+                      Influence weighted signals
+                    </h2>
+                    Signal received from highly influential user is given more weight.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- end .content-center -->
           </div>
           <!-- .end .wrap -->
         </section>
+
+
         <section>
           <div class="wrap size-50">
             <h3>Let's check out some examples.</h3>
@@ -2164,6 +2342,6 @@
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
     <script defer src="../static/js/svg-icons.js"></script>
-
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   </body>
 </html>
