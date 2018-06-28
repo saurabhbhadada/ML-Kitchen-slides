@@ -3821,6 +3821,10 @@ p.text-symbols {
   margin-bottom: 0;
 }
 
+.mjx-chtml {
+  font-size: 118% !important;
+}
+
 /* Progress circle */
 *,
 *:before,
